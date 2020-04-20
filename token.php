@@ -6,7 +6,7 @@ $headers[] = 'X-AppVersion: 3.48.2';
 $headers[] = "X-Uniqueid: ac94e5d0e7f3f" . rand(111, 999);
 $headers[] = 'X-Location: id_ID';
 ulang:
- echo "[+] Masukin Nomor GOJEK Kamu Disini : ";
+ echo "[+] Masukin Nomor JANDA MU DI SINI : ";
  $number = trim(fgets(STDIN));
  $login = curl('https://api.gojekapi.com/v3/customers/login_with_phone', '{"phone":"+' . $number . '"}', $headers);
  $logins = json_decode($login[0]);
