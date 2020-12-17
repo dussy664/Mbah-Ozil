@@ -5,12 +5,12 @@ os.system('clear');
 include "fcgomart.php";
 ulang:
 // function change(){
-echo color("purple","               CLAIM VOUCHER GOJEK   GOMART                  \n");
-echo color("red","                Semoga Cuan     \n");
-echo color("nevy","        Waktu  : ".date('[d-m-Y] [H:i:s]')."                        \n");
-echo color("green","         GOJEK                      \n") ;
-echo color("yellow","               CROT CROT CROT                       \n");
-echo color("blue","        Format Nomor 08/62 Pake Salah Satu                  \n");
+echo color("purple","CLAIM VOUCHER GOJEK   GOMART                  \n");
+echo color("red","===================================\n");
+echo color("nevy","Waktu  : ".date('[d-m-Y] [H:i:s]')."\n");
+echo color("green","°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°\n") ;
+echo color("yellow","G O J E K °°°°°° G O M A R T\n");
+echo color("blue","Format Nomor 08/62 \n");
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
         echo color("green","Masukkan Nomor : ");
@@ -48,7 +48,7 @@ echo color("blue","        Format Nomor 08/62 Pake Salah Satu                  \
         $data1 = '{"client_name":"gojek:cons:android","data":{"otp":"' . $otp . '","otp_token":"' . $otptoken . '"},"client_secret":"83415d06-ec4e-11e6-a41b-6c40088ab51e"}';
         $verif = request("/v5/customers/phone/verify", null, $data1);
         if(strpos($verif, '"access_token"')){
-        echo color("yellow","BERHASIL REGIST\n");
+        echo color("yellow","BERHASIL REGISTRASI\n");
         $token = getStr('"access_token":"','"',$verif);
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("green","+] Token : ".$token."\n\n");
@@ -73,28 +73,28 @@ $accesstoken = $json['access_token'];
 echo "\n";
 echo color("yellow","=====!=======!!========!!!=====!!!======\n");
          
-         echo "\n".color("nevy"," Sedang Mengganti TIKOR     ");
+         echo "\n".color("nevy"," Sedang Mengganti JANDA     ");
         for($a=1;$a<=3;$a++)
 {
-        echo color("red","💞💞  ");
+        echo color("blue","💞💞  ");
         sleep(7);
         }
         echo "\n";
         date_default_timezone_set('Asia/Jakarta');
 $token = $accesstoken; 
-echo colorreff("green"," Auto,  Sambil ngopi Mang ");
+echo colorreff("green"," Auto,  Sambil CROT ");
 echo "\n";
 sleep(10);
         
 echo "\n";
 
-           echo "\n".color("green","👌🍱 Ambil Voucer ");
+           echo "\n".color("green","🍱 Ambil Voucer ");
         echo "\n".color("nevy","Intip Dulu ");
         for($a=1;$a<=3;$a++){
         echo color("blue","👀 ");
         sleep(10);
         }
-         $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"HARIJADI3"}');
+         $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"HARBONASMART"}');
         $message = fetch_value12($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".colorss("green","👍🙏 Message: ".$message);
@@ -108,7 +108,7 @@ echo "\n".color("green","👌🍱 Ambil Voucer ");
         echo color("blue","👀 ");
         sleep(10);
         }
-        $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"HARIJADI5"}');
+        $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"HARBONASMART"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("green","👍🙏 Message: ".$message);
@@ -122,7 +122,7 @@ echo "\n".color("green","👌🍱 Ambil Voucer ");
         echo color("blue","👀 ");
         sleep(10);
         }
-        $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"HARIJADI6"}');
+        $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"YEARENDSALE"}');
         $message = fetch_value12($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".colorss("green","👍🙏 Message: ".$message);
@@ -136,7 +136,7 @@ echo "\n".color("green","👌🍱 Ambil Voucer ");
         echo color("blue","👀 ");
         sleep(10);
         }
-        $code1 = requested('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"HARIJADI4"}');
+        $code1 = requested('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"YEARENDSALE"}');
         $message = fetch_value1($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("green","👍🙏 Message: ".$message);
@@ -153,7 +153,7 @@ echo "\n".color("green","👌🍱 Ambil Voucer ");
         echo color("blue","👀 ");
         sleep(8);
         }
-        $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"HARIJADI3"}');
+        $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"YEARENDSALE"}');
         $message = fetch_value1($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".colorss("green","👍🙏 Message: ".$message);
@@ -170,7 +170,7 @@ echo "\n".color("green","👌🍱 Ambil Voucer ");
         echo color("blue","👀 ");
         sleep(7);
         }
-        $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"MAUGOFOOD1908"}');
+        $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"HARBONASMART"}');
         $message = fetch_value12($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".colorss("green","👍🙏 Message: ".$message);
