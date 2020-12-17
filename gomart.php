@@ -5,11 +5,11 @@ os.system('clear');
 include "fcgomart.php";
 ulang:
 // function change(){
-echo color("purple","CLAIM VOUCHER GOJEK   GOMART                  \n");
+echo color("yellow","VOUCHER GOJEK   GOMART                  \n");
 echo color("red","===================================\n");
 echo color("nevy","Waktu  : ".date('[d-m-Y] [H:i:s]')."\n");
-echo color("green","°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°\n") ;
-echo color("yellow","G O J E K °°°°°° G O M A R T\n");
+echo color("green","°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°\n") ;
+echo color("yellow","G O J E K °°°°°°°°°°° G O M A R T\n");
 echo color("blue","Format Nomor 08/62 \n");
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
@@ -73,28 +73,28 @@ $accesstoken = $json['access_token'];
 echo "\n";
 echo color("yellow","=====!=======!!========!!!=====!!!======\n");
          
-         echo "\n".color("nevy"," Sedang Mengganti JANDA     ");
+         echo "\n".color("nevy"," SEDANG CLAIM VOUCHER     ");
         for($a=1;$a<=3;$a++)
 {
-        echo color("blue","💞💞  ");
+        echo color("blue","🕐🕐  ");
         sleep(7);
         }
         echo "\n";
         date_default_timezone_set('Asia/Jakarta');
 $token = $accesstoken; 
-echo colorreff("green"," Auto,  Sambil CROT ");
+echo colorreff("green","Sambil CROT ");
 echo "\n";
-sleep(10);
+sleep(7);
         
 echo "\n";
 
-           echo "\n".color("green","🍱 Ambil Voucer ");
-        echo "\n".color("nevy","Intip Dulu ");
+           echo "\n".color("green","Sedang CLAIM ");
+        echo "\n".color("nevy","tunggu.. ");
         for($a=1;$a<=3;$a++){
         echo color("blue","👀 ");
-        sleep(10);
+        sleep(7);
         }
-         $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"HARBONASMART"}');
+         $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"YEARENDSALE"}');
         $message = fetch_value12($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".colorss("green","👍🙏 Message: ".$message);
@@ -102,13 +102,13 @@ echo "\n";
         echo "\n".colorss("red","-] Message: ".$message);
         sleep(7);
 }
-echo "\n".color("green","👌🍱 Ambil Voucer ");
-        echo "\n".color("nevy","Intip Dulu ");
+echo "\n".color("green","Sedang CLAIM ");
+        echo "\n".color("nevy","Tunggu.. ");
         for($a=1;$a<=3;$a++){
         echo color("blue","👀 ");
         sleep(10);
         }
-        $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"HARBONASMART"}');
+        $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"YEARENDSALE"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("green","👍🙏 Message: ".$message);
@@ -116,8 +116,8 @@ echo "\n".color("green","👌🍱 Ambil Voucer ");
         echo "\n".color("red","-] Message: ".$message);
         sleep(10);
 }
-echo "\n".color("green","👌🍱 Ambil Voucer ");
-        echo "\n".color("nevy","Intip Dulu ");
+echo "\n".color("green","Sedang CLAIM ");
+        echo "\n".color("nevy","Tunggu.. ");
         for($a=1;$a<=3;$a++){
         echo color("blue","👀 ");
         sleep(10);
@@ -130,8 +130,8 @@ echo "\n".color("green","👌🍱 Ambil Voucer ");
         echo "\n".colorss("red","-] Message: ".$message);
         sleep(15);
 }
-echo "\n".color("green","👌🍱 Ambil Voucer ");
-        echo "\n".color("nevy","Intip Dulu ");
+echo "\n".color("green","Sedang CLAIM ");
+        echo "\n".color("nevy","Tunggu.. ");
         for($a=1;$a<=3;$a++){
         echo color("blue","👀 ");
         sleep(10);
@@ -147,8 +147,8 @@ echo "\n".color("green","👌🍱 Ambil Voucer ");
         sleep(10);
         
         }
-        echo "\n".color("green","👌🍱 Ambil Voucer ");
-        echo "\n".color("nevy","Intip Dulu ");
+        echo "\n".color("green","Sedang CLAIM ");
+        echo "\n".color("nevy","Tunggu ");
         for($a=1;$a<=3;$a++){
         echo color("blue","👀 ");
         sleep(8);
@@ -164,8 +164,8 @@ echo "\n".color("green","👌🍱 Ambil Voucer ");
 	
         sleep(10);
         }
-        echo "\n".color("green","👌🍱 Ambil Voucer ");
-        echo "\n".color("nevy","Intip Dulu ");
+        echo "\n".color("green","Sedang CLAIM ");
+        echo "\n".color("nevy","Tunggu.. ");
         for($a=1;$a<=3;$a++){
         echo color("blue","👀 ");
         sleep(7);
@@ -222,7 +222,7 @@ echo "\n".color("green","👌🍱 Ambil Voucer ");
         $expired11 = getStr23('"expiry_date":"','"',$cekvoucher,'11');
         $expired12 = getStr23('"expiry_date":"','"',$cekvoucher,'12');
         $expired13 = getStr23('"expiry_date":"','"',$cekvoucher,'13');
-    echo color("nevy","  SEMOGA CUAN,  SCRIPT BY KING \n");   
+    echo color("nevy","  SEMOGA BERKAH DAN CUAN \n");   
        
        setpin:
          echo "\n".color("yellow","  📲📟 SET PIN ?: y/n ");
