@@ -4,10 +4,7 @@ include "function.php";
 echo color("green"," ===========================\n");
 echo color("green","| Claim Voucher Gojek|\n");
 echo color("pink","| Auto create Gojek X Redeem voucher gofoood |\n");
-echo color("green","| github: HERMAN Kheng |\n");
-echo color("blue","| fanspage :asoy dan geboy|\n");
-echo color("yellow","| Creator : hermankheng23@gmail.com          |\n");
-echo "| Kata sambutan : semoga vouchernya keluar biar asoy cuy      |\n";
+echo "| Kata sambutan : semoga vouchernya keluar     |\n";
 echo "| Time    :".date('[d-m-Y] [H:i:s]')."   |\n";
 echo " ===========================\n";
 
@@ -61,7 +58,7 @@ echo " ===========================\n";
         echo color("yellow",".");
         sleep(1);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"YEARENDSALE"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"END2020"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("green","+] Message: ".$message);
@@ -75,7 +72,7 @@ echo " ===========================\n";
         sleep(1);
         }
         sleep(3);
-        $boba10 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"YEARENDSALE"}');
+        $boba10 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"END2020"}');
         $messageboba10 = fetch_value($boba10,'"message":"','"');
         if(strpos($boba10, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("green","+] Message: ".$messageboba10);
@@ -89,7 +86,7 @@ echo " ===========================\n";
         sleep(1);
         }
         sleep(3);
-        $boba19 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"YEARENDSALE"}');
+        $boba19 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"END2020"}');
         $messageboba19 = fetch_value($boba19,'"message":"','"');
         if(strpos($boba19, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("green","+] Message: ".$messageboba19);
@@ -114,7 +111,7 @@ echo " ===========================\n";
         sleep(1);
         }
         sleep(3);
-        $goride1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"HARBONASMART"}');
+        $goride1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"YEARENDSALE"}');
         $message2 = fetch_value($goride1,'"message":"','"');
         echo "\n".color("red","+] Message: ".$message2);
         sleep(3);
